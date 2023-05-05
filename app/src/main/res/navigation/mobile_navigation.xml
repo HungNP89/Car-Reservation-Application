@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.carreservationapplication.ui.Home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.carreservationapplication.ui.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_reserved"
+        android:name="com.example.carreservationapplication.ui.Reserved"
+        android:label="Car Reserved"
+        tools:layout="@layout/fragment_reserved" />
+
+    <fragment
+        android:id="@+id/nav_return"
+        android:name="com.example.carreservationapplication.ui.Return"
+        android:label="Car Return"
+        tools:layout="@layout/fragment_return" />
+
+    <fragment
+        android:id="@+id/nav_pickup"
+        android:name="com.example.carreservationapplication.ui.PickUpLocation"
+        android:label="Pick Up Location"
+        tools:layout="@layout/fragment_pick_up_location" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.carreservationapplication.ui.Feedback"
+        android:label="Feed"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>
